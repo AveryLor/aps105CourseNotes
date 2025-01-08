@@ -1,0 +1,21 @@
+Software application examples include goodnotes and safari
+
+Operating systems include MacOS and windows
+
+Hardware
+
+- CPU (Central processing unit), this is like the brainof the computer which executes instructions
+
+* Executes instructions
+* The arms of the CPU are input/output devices like peripheral devices which provide input to the comptuer, they connect the computer system to the user/outside world
+* The cpu gets its instructions from the memory which is a storage device, it stores instructions and data, information stored in here is written in machine code which is a binary language (stored as 0s and 1s). Humans cannot understand it, but it is understood by the computer.
+* Instructions are written in machine code that has 0s and 1s.
+
+When we develop a program, we write it in a programming language (in C). This gets converted to isntructions in 0s and 1s (machine code) by the compiler. The compiler is a program that converts the code into a language that the computer understands.
+
+Developmenet cycle
+
+1. Write (edit)
+2. Compile
+3. Run
+4. Debug, find and fix errors in the code.
