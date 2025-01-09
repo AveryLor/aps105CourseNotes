@@ -1,0 +1,13 @@
+The printf function outputs a string, but also the number of characters (bytes) that are included in the character, each character represents a byte
+8 bits typically encode each character (which are equivalent to one byte)
+
+printf can return a function that returns an integer of the number of characters printed
+
+The escape sequence is a character, spaces are characters
+
+The number 65 corresponds to A, which is why that if you use the format specifier for A, that ascii value corresponds
+
+Constant variables never change, static variales are variables is used in object oriented programming and is used to define specific special values that are 
+saved in the programming
+
+If you print an uninitialized variable it will still print a random integer
