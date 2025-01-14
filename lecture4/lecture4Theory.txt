@@ -1,0 +1,11 @@
+Undefined behaviour means when the program failsto compile, or it may execute incorreclty, either crasahes or geneates incorrect results
+Integer division, if divided by 2 still integer
+The more precise type is contagious
+Explicit type conversion int b = (int) a;
+
+Precedence 
+()
+<type>, sizeof, ++ (calling functions)
+* / % (multiplication, division, modulus)
++-
+=, +=, -=
