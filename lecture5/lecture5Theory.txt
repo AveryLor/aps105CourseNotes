@@ -1,2 +1,6 @@
-Learning about the math library in this lecure
-/Users/averylor/Downloads/1_gQ6RMxhKkPauq92rqFv9-Q.jpg
+Learning about the math library in this lecture
+
+The rint() functions return the integral value (represented in a floating-point mode) nearest x using the round to nearest mode
+
+Randomness is determined by the seed value, therefore if you run the program again it will return the same numbers 
+It generates a deterministic sequence of numbers based on a seed value. 
