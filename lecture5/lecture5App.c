@@ -14,7 +14,7 @@ int main() {
     printf("The remainder of %lf divided by %lf is %lf\n", x, y, remainder);
     */
 
-    double z = 2.5; // Rounds down at 2.5 instead for some reason
+    double z = 2.5; // Rounds down at 2.5 since it rounds to even numbers
     printf("%d", (int) rint(z)); 
 
     double f = 3.66;

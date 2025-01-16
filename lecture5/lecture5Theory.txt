@@ -4,3 +4,9 @@ The rint() functions return the integral value (represented in a floating-point 
 
 Randomness is determined by the seed value, therefore if you run the program again it will return the same numbers 
 It generates a deterministic sequence of numbers based on a seed value. 
+
+Computes the nearest integer, rounding away from zero, rounding away from zero in halfway cases. 
+double round(double x)
+
+Computes the nearest integer, rounding towards even in halfway cases
+double rint(double x)
