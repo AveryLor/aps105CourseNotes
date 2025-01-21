@@ -1,0 +1,17 @@
+Programs follow a sequential flow from top to bottom. 
+This flow by itself, is not flexible enough to create complex programs.
+There are different types of control flow statements in programming. 
+Today, we focus on conditional statements.
+
+For an if statement if the expression is true, the statement gets executed. 
+
+The number of 0 is false while everything else is true. 
+
+Logical operators are and (&&)
+OR (||)
+AND (&&) 
+NOT (!)
+
+Do not use | and & which are bitwise operators. You can use them, just don't confuse them.
+
+Remember that only the first character is read 

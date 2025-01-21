@@ -1,0 +1,11 @@
+De Morgan's Laws 
+
+First law: the negative of a disjunction (OR) is equivalent to the conjunction (AND) or the negations: In other words not (A or B) is equivlanet to not a and not B. 
+
+
+
+
+It is not true that either A or B is true, this is true only when both A and B are false 
+
+
+and then for !(A and B) then it is not true that A and B are true, but only when A or B are false
