@@ -1,0 +1,10 @@
+Today's focus: for loops
+
+It runs a loop a finite number of times based on a counter variable. 
+
+You have three expressions, one of setting the variable, the comparison method and then finally the manual counter. 
+
+
+You can use continue to continue through the code, everything after that statement is going to be ignored, break, breaks out of the loop
+
+Continue completes skisp after ward
