@@ -1,0 +1,5 @@
+while statement is a control flow statement used to execute a block of code repeatedly as long as a specified condition evaluates to true. 
+
+If the condition is true it will run, otherwise if the condition is false, it will not
+
+We can execute some statements, and then potentially repeat executing them as long as a condition is true
