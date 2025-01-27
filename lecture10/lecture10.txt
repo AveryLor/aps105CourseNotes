@@ -1,0 +1,9 @@
+int addTen(int x) {
+    return x + 10;
+}
+
+You use functions to reuse logic over and over again without having to use the same amount of code. 
+
+Use a function prototype to call a function, if you define it below. 
+
+C copies the value, it passes it into 
