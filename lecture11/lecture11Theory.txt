@@ -1,0 +1,4 @@
+Scope inC refers to the specific region or block within a progam where a variable is declared, defiend and can be accessed Outside of this designated area, the variable is not recognized and cannot be used. 
+Shadowing prevents the access of variables within blocks
+
+Pointers are variables that store the memory address of another variable. They are used to indirectly access the variable they
