@@ -1,0 +1,1 @@
+// Pointesr are the starting address of a variable in memory
