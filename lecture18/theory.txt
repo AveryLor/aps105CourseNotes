@@ -1,0 +1,33 @@
+malloc 
+
+Returns a pointer to a starting address, you may then use contiguous bytes. 
+
+The value it's pointing to is undefined, meaning it could be anything. 
+
+The value it's pointing to is undefined, meaning it could be anything. 
+
+Leaking memory
+
+- Not deallocating memory is called a memory leak 
+
+This becomes an issue when you prorgam keeps running for a long time, you might run out of memory and/or slow other programs 
+
+You sohuld "free" memories you allocate using the free function. 
+
+The pointer argument, ptr, needs to be the address returned from malloc. 
+
+Exit will end the program whereever you are no matter where it is in the program
+
+assert ensures allocation was sucessful (will abort if p is NULL)
+
+Set the pointer to null after
+
+How to avoid use-after-free or dangling pointer? 
+
+Set the pointer to null, immediately after free()
+
+- This is a good practice to avoid use-after-free or dangling pointer
+
+Free memory means that you are giving back memory to the system
+
+Memory Allocation: Ensure that you allocate memory using malloc, and always free it using free. 
