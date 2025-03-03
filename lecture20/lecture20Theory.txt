@@ -1,0 +1,19 @@
+Remember that there is a null termination character at the end so add 1 to the end
+
+"hello" stored as {'h', 'e', 'l', 'l', 'o', '\0'} So the size of this is is 6 not 5
+
+Using a smaller array than needed can lead to many issues
+
+puts prints a string from stdlib.h
+
+Never use scanf to get a string
+
+Use fgest to get a string, it prevents the buffer overflow by limiting input size. it reads a line of text from a stream 
+
+It returns a pointer from a character
+
+getLine is a dynamic safe, and flexilbe way to read an entire line of input in C. It automatically allocates or resizes memory, making it preferable over fgets() when handlingg unknown or large input sizes. 
+
+On sucess it returns the number of charater including \n but not \0
+
+Null termination is where the string stops printing
