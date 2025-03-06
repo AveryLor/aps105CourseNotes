@@ -1,0 +1,15 @@
+int main(int argc, char *arv[]) in c 
+
+this is the main function signature that allows command-line argumetns in a C program. 
+
+Parmaeters 
+
+argc (argument count)
+
+- The number of command-line arguments passed to the program
+- Includes the program's name itself
+
+argv argument vector
+- An array of strings (char *) each storing one command-line argument
+- argv is always the program's name 
+- argv[1], argv[2], etc. contain additional arguments (if any)
