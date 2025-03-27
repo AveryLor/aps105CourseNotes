@@ -112,3 +112,19 @@ int partition
 
 // Time complexity: o(n log(n))
 // Worse case : o(n^2) (when pivot is poorly chosen)
+
+
+// Bubble sort 
+// Selection sort 
+// Insertion sort
+
+// Merge Sort 
+
+// Divide: Split the array into left and right halves. 
+// Sort: Recursively apply merge sort on both halves. 
+// Merg: Combine the sorted halves by comparing elements. 
+
+void mergeSort(int arr[], int low, int high) {
+
+}
+
