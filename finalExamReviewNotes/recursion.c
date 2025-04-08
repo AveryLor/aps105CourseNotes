@@ -1,9 +1,19 @@
 #include <stdio.h> 
+#include <stdbool.h> 
+#include <string.h> 
+
+// bool isPalindrome(char stringInfo[]); 
 
 int main() {
+    char raceCar = {'r','a','c','e','c','a','r'}; 
     // printInvertedTriangle(5);
     // printRow(5); 
-    printTriangle(5); 
+    // printTriangle(5); 
+    if (isPalindrome(raceCar)) { // Prints 1 for true, 0 for false
+        printf("True"); 
+    } else {
+        printf("False"); 
+    }
 
     return 0; 
 }
@@ -86,10 +96,87 @@ void printRow(int n) {
 }
 
 void printTriangle(int n) {
-    if (n == 1) {
-        printf("*\n"); 
-        return; 
+    if (n == 0) {
+        return; // After a return you continue what you were doing before 
     }
     printRow(n); 
-    return printTriangle(n-1); 
+    printTriangle(n-1); // After a return you continue what you were doing here before
+    printRow(n); 
 }
+
+/*
+ROM stands for read-only memory
+
+It is non-volatile, meaning it retains data even when the device is powered off. 
+
+It stores firmware or permanent software, like the BIOS in a computer. 
+
+As the name suggests, it's monly not writable during normal operations
+
+The stack and heap are both located in RAM, which is voltatile memory (data disappears when power is off)
+
+The stack is used for function call frames, local variables etc. 
+The heap is used for dynamic memory allocaiton (malloc, new, etc.)
+
+If you try to free() a pointer that points to read-only memory (like a string literal in C), you'll get undefined behaviour
+
+char *str = "hello"; 
+free(str); // This leads to undefined behaviour
+
+-> You are creating a string literal, which is stored in a special section of memory, typically read-only memory (often the .rodata segment of your compiled binary)
+
+When you do: 
+
+free(str)
+
+You are telling the runtime to deallocate memory that was not allocated with malloc (or friends)
+Is not on the heap 
+Might be in a protected read-only segment 
+
+You might also want to add const char*, to ensure that the system knows that you do not intend to edit that string 
+
+
+char* is null terminated
+char[] is null terminated
+*/
+
+void printPattern(int n) {
+    if (n > 0) {
+        printPattern(n - 1);
+        printRow(n);
+        printPattern(n - 1);
+    }
+}
+
+bool isRecursive(char stringInfo[], int low, int high) {
+    if (low >= high) { // Base case for going all the way with sucess
+        return true; 
+    }
+    if (stringInfo[low] != stringInfo[high]) { // Base case for instant failure
+        return false; 
+    } else {
+        return isRecursive(stringInfo, low + 1, high - 1); // Traversing through the string
+    }
+}
+
+// bool isPalindrome(char stringInfo[]) {
+//     printf("Here"); 
+//     int lenStr = strlen(stringInfo); 
+//     int mid = lenStr/2; 
+//     char end1[mid]; 
+//     char end2[mid]; 
+
+//     for (int i = 0; i < mid; i++) {
+//         end1[i] = stringInfo[i]; 
+//     }
+
+//     for (int j = mid; j > 0; j--) {
+//         end2[j] = stringInfo[j]; 
+//     }
+
+//     if (strcmp(end1, end2) == 0) {
+//         return true; 
+//     } else {
+//         return false; 
+//     }
+// }
